@@ -1,0 +1,185 @@
+body {
+    background-image: linear-gradient(to right, rgb(248, 248, 196), rgb(233, 145, 158));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+nav {
+    background-color: rgb(242, 102, 106);
+    color: white;
+    padding: 1px;
+    /* height: 70%; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 50px; 
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Garamond','Times New Roman', Times, serif; 
+    font-weight: bold; 
+    letter-spacing: 3px; 
+
+}
+
+.logo img {
+    height: 40px; 
+    width: auto; 
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .logo {
+        order: 1; 
+    }
+}
+
+.lorem-ipsum{
+    font-size: 40px;
+    letter-spacing: 8px;
+    padding-bottom: 50px;
+}
+
+.content-wrapper {
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.content {
+    flex-grow: 1; 
+    width: 50%; 
+    padding-right: 20px; 
+    overflow: auto; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;   
+    margin: auto; 
+    margin-left: 70px; 
+    margin-right: 70px;  
+}   
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px; 
+    line-height: 1.6;  
+    margin-bottom: 20px;    
+    font-family: "Gill Sans", sans-serif;    
+    font-weight: 300;  
+}
+
+.click-me-button {
+    margin-top: 50px;
+    padding: 10px 70px;
+    background-color: rgb(242, 102, 106);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.click-me-button:hover {
+    background-color: rgb(238, 85, 90);
+}
+
+
+
+.cover-image {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    max-width: 735\px;
+    margin: 0 auto;
+}
+
+.cover-image img {
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; 
+    }
+
+    .content, .cover-image {
+        width: 100%; 
+    }
+}
+
+
+/* Responsive design for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        width: 70%; 
+        padding-right: 10px; 
+    }
+    .cover-image {
+        width: 70%; 
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; 
+    }
+
+    .content, .cover-image {
+        width: 100%;  
+    }
+
+    .content {
+        padding-right: 0; 
+    }
+
+    .lorem-ipsum {
+        font-size: 30px; 
+    }
+
+    .click-me-button {
+        padding: 10px 40px; 
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .content {
+        width: 60%; 
+        padding-right: 30px; 
+    }
+    .cover-image {
+        width: 100%; 
+    }
+}
+
+
